@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const key = process.env.FAVORIT_API_KEY;
+  const key = '00000000-0000-0000-0000-000000000001';
   if (!key) {
     return res.status(500).json({
       error: 'Empty key! Укажите переменную окружения FAVORIT_API_KEY в Vercel.',
