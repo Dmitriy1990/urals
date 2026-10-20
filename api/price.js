@@ -1,4 +1,4 @@
-const UPSTREAM = 'http://api.favorit-parts.ru/hs/hsprice/';
+const UPSTREAM = 'https://api.favorit-parts.ru/hs/hsprice/';
 const ALLOWED_QUERY = ['number', 'brand', 'analogues', 'info'];
 
 export default async function handler(req, res) {
