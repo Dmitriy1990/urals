@@ -1,4 +1,4 @@
-import { API_BASE, API_KEY, USE_CLIENT_API_KEY } from '../config';
+import { API_BASE, API_KEY } from '../config';
 
 function buildUrl(params) {
   const search = new URLSearchParams();
