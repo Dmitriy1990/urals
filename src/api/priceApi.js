@@ -2,9 +2,9 @@ import { API_BASE, API_KEY, USE_CLIENT_API_KEY } from '../config';
 
 function buildUrl(params) {
   const search = new URLSearchParams();
-  if (USE_CLIENT_API_KEY) {
-    search.set('key', API_KEY);
-  }
+
+  search.set('key', API_KEY);
+
   Object.entries(params).forEach(([key, value]) => {
     if (value !== undefined && value !== null && value !== '') {
       search.set(key, value);
