@@ -5,6 +5,10 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/api/price",
+      "destination": "http://api.favorit-parts.ru/hs/hsprice"
+    },
+    {
       "source": "/((?!api/).*)",
       "destination": "/index.html"
     }
