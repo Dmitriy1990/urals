@@ -1,0 +1,34 @@
+body {
+  background-color: #f5f7fa;
+}
+
+.brand-card {
+  cursor: pointer;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.brand-card:hover {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+  border-color: #0d6efd !important;
+}
+
+.brand-card.selected {
+  border-color: #0d6efd !important;
+  background-color: #e7f1ff;
+}
+
+.offers-scroll {
+  max-height: min(62vh, 560px);
+  overflow: auto;
+}
+
+.offers-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  box-shadow: inset 0 -1px 0 #dee2e6;
+}
+
+.offers-table td {
+  vertical-align: middle;
+}
